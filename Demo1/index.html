@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script><!-- dùng defer để chắc chắn DOM sẵn sàng trước khi chạy JS -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="card">
+            <h1 class="title">Todo App</h1>
+
+            <div class="add-row">
+                <input id="todo-input" type="text" placeholder="Add your new todo" />
+                <button id="add-btn" class="btn add" aria-label="Add">+</button>
+            </div>
+
+            <div class="search-row">
+                <input id="search-input" type="text" placeholder="Search todos..." />
+                <button id="search-btn" class="btn search">Search</button>
+            </div>
+
+            <ul id="todo-list" class="list"></ul>
+
+            <div class="footer">
+                <span id="pending-text">You have 0 pending tasks</span>
+                <button id="clear-all" class="btn clear">Clear All</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
